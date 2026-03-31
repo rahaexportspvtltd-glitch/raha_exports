@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raha Exports</title>
+
+<style>
+
+/* THEME COLORS (FROM PDF STYLE) */
+:root {
+  --green:#0d644a;
+  --dark:#06251c;
+  --gold:#c8a45c;
+  --light:#f7f7f7;
+}
+
+/* GLOBAL */
+body {
+  margin:0;
+  font-family: 'Segoe UI', sans-serif;
+  background:var(--light);
+  scroll-behavior:smooth;
+}
+
+/* HEADER */
+header {
+  background:var(--green);
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h2 {
+  color:#fff;
+  margin:0;
+}
+
+nav a {
+  color:#fff;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+/* HERO (HIGHLIGHTED LIKE PDF) */
+.hero {
+  background:linear-gradient(rgba(198, 196, 196, 0.6), rgba(115, 163, 235, 0.6)),
+  url('https://images.unsplash.com/photo-1606788075761-3a7fdd2b98b9') center/cover;
+  color:white;
+  text-align:center;
+  padding:120px 20px;
+  
+}
+@keyframes heroFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MAIN HEADING */
+.hero h1 {
+  opacity: 0;
+  animation: heroFadeUp 1s ease forwards;
+}
+
+/* SUBHEADING */
+.hero p {
+  opacity: 0;
+  animation: heroFadeUp 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+/* BUTTON */
+.hero .btn {
+  opacity: 0;
+  animation: heroFadeUp 1s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.hero h1 {
+  font-size:45px;
+  color:var(--gold);
+}
+
+.hero p {
+  font-size:18px;
+}
+
+.btn {
+  background:var(--gold);
+  color:black;
+  padding:12px 20px;
+  text-decoration:none;
+  border-radius:5px;
+  margin-top:15px;
+  display:inline-block;
+  font-weight:bold;
+}
+
+/* SECTION */
+.section {
+  padding:60px 30px;
+  text-align:center;
+}
+
+.section h2 {
+  color:var(--green);
+  margin-bottom:10px;
+}
+
+/* ABOUT (HIGHLIGHT BLOCK) */
+.about {
+  padding: 80px 20px;
+  background: #f5f5f5;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap; /* makes it mobile responsive */
+  
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.about-text h2 {
+  color: #0b3d2e;
+  font-size: 39px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.about h2 {
+  color:var(--gold);
+}
+
+/* GRID */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+
+/* CARD */
+.card {
+  background:white;
+  border-radius:10px;
+  padding:15px;
+  box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.card img {
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+/* CONTACT */
+.contact {
+  background:var(--green);
+  color:white;
+}
+
+.whatsapp {
+  background:#25D366;
+  color:white;
+}
+
+/* FOOTER */
+footer {
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h2>Raha Exports</h2>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h1>Quality Without Borders</h1>
+  <p>Premium Exporters of Quality Products from India</p>
+
+  <!-- WHATSAPP CTA -->
+  <a href="https://wa.me/97431246767" class="btn">Get a Quote</a>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+
+    <div class="about-container">
+  
+      <!-- TEXT SIDE -->
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          We are a trusted export partner specializing in sourcing and supplying high-quality products from India.
+          With a strong supplier network in Kerala, we ensure premium quality, competitive pricing, and timely global delivery.
+        </p>
+      </div>
+  
+      <!-- IMAGE SIDE -->
+      <div class="about-image">
+        <img src="image1.jpg" alt="About Raha Exports">
+      </div>
+  
+    </div>
+  
+  </section>
+
+<!-- WHY CHOOSE US -->
+<section class="section">
+  <h2>Why Choose Us</h2>
+  <div class="grid">
+    <div class="card">✔ Direct Sourcing</div>
+    <div class="card">✔ Quality Control</div>
+    <div class="card">✔ Competitive Pricing</div>
+    <div class="card">✔ Global Shipping</div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <h2>Our Services</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b">
+      <h3>Product Sourcing</h3>
+    </div>
+
+    <div class="card">
+      <img src="service2.1.jpg">
+      <h3>Quality Checking</h3>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc">
+      <h3>Export Packaging</h3>
+    </div>
+
+    <div class="card">
+      <img src="service 4.jpg">
+      <h3>Shipping Support</h3>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+
+<h2>Spices</h2>
+<a href="spices.html">
+<div class="grid">
+<div class="card"><img src="cinnamon.jpg"><p>Cinnamon</p></div>
+<div class="card"><img src="cardamom.jpg"><p>Cardamom</p></div>
+<div class="card"><img src="blackpepper.jpg"><p>Black Pepper</p></div>
+<div class="card"><img src="clove.jpg"><p>Cloves</p></div>
+<div class="card"><img src="termeric.jpg"><p>Turmeric</p></div>
+<div class="card"><img src="coriander.jpg"><p>Coriander</p></div>
+<div class="card"><img src="redchilli.jpg"><p>Red Chilli</p></div>
+</div>
+</a>
+
+<h2>Vegetables</h2>
+<a href="vegetables.html">
+<div class="grid">
+<div class="card"><img src="tomato.jpg"><p>Tomato</p></div>
+<div class="card"><img src="onion.jpg"><p>Onion</p></div>
+<div class="card"><img src="smallonion.jpg"><p>Small onion</p></div>
+<div class="card"><img src="potato.jpg"><p>Potato</p></div>
+<div class="card"><img src="ginger.jpg"><p>Ginger</p></div>
+<div class="card"><img src="garlic.jpg"><p>Garlic</p></div>
+<div class="card"><img src="greenchilli.jpg"><p>Green Chilli</p></div>
+<div class="card"><img src="drumstic.jpg"><p>Drumstick</p></div>
+<div class="card"><img src="brinjal.jpg"><p>Brinjal</p></div>
+<div class="card"><img src="lemon.jpg"><p>Lemon</p></div>
+<div class="card"><img src="cucumber.jpg"><p>Cucumber</p></div>
+<div class="card"><img src="carrot.jpg"><p>Carrot</p></div>
+</div>
+</a>
+
+<h2>Fruits</h2>
+<a href="fruits.html">
+<div class="grid">
+<div class="card"><img src="banana.jpg"><p>Banana</p></div>
+<div class="card"><img src="apple.jpg"><p>Apple</p></div>
+<div class="card"><img src="Mango.jpg"><p>Mango</p></div>
+<div class="card"><img src="papaya2.jpg"><p>Papaya</p></div>
+<div class="card"><img src="pineapple.jpg"><p>Pineapple</p></div>
+<div class="card"><img src="pomegranate.jpg"><p>Pomegranate</p></div>
+<div class="card"><img src="watermelon.jpg"><p>Watermelon</p></div>
+<div class="card"><img src="coconut.jpg"><p>Coconut</p></div>
+<div class="card"><img src="tender-coconut.jpg"><p>Tender Coconut</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1537640538966-79f369143f8f"><p>Grapes</p></div>
+</div>
+</a>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <h3 class="Note">
+    " We also customize our products based on customer requirements to ensure complete satisfaction "
+  </h3>
+
+  <p>Email: rahaexportspvtltd@gmail.com</p>
+  <p>Phone: +974 3124 6767</p>
+  <p>Kerala , India</p>
+
+  <a href="mailto:rahaexportspvtltd@gmail.com" class="btn">Send Email</a>
+  <a href="https://wa.me/97431246767" class="btn whatsapp">WhatsApp</a>
+</section>
+
+<footer>
+© 2026 Raha Exports | All Rights Reserved
+</footer>
+
+</body>
+</html>
